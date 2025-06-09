@@ -8,7 +8,8 @@ import Close from "@/assets/close-black.png"
 const Navbar = () => {
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-    const [_isMobile, setIsMobile] = useState(false);
+     // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [isMobile, setIsMobile] = useState(false);
 
     // Effect to handle window resize for responsiveness
     useEffect(() => {
