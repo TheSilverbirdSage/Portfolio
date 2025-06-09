@@ -31,7 +31,7 @@ const Contact = () => {
                     'template_qq9gzdt',   // Replace with your EmailJS Template ID
                     form.current,
                     {
-                        publicKey: 'SaKGVrj-ZxLxly7B', // Replace with your EmailJS Public Key
+                        publicKey: 'vJzkZCSJMLG4PszkH', // Replace with your EmailJS Public Key
                     }
                 )
                 .then(
