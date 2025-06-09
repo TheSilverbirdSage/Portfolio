@@ -8,7 +8,7 @@ import Close from "@/assets/close-black.png"
 const Navbar = () => {
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+    const [_isMobile, setIsMobile] = useState(false);
 
     // Effect to handle window resize for responsiveness
     useEffect(() => {
@@ -90,10 +90,6 @@ const Navbar = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, [isDrawerOpen]); // Dependency array: Re-run if drawer state changes (to close on resize)
-
-    // Determine which menu/close icon to show based on the current theme
-    const currentMenuIcon = theme === 'light' ? assets.menu_black : assets.menu_white;
-    const currentCloseIcon = theme === 'light' ? assets.close_black : assets.close_white;
 
     return (
         <>

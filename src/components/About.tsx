@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
-import { infoList, assets, toolsData } from '@/assets/assets';
+import { infoList, toolsData } from '@/assets/assets';
 import UserImage from "@/assets/profile.jpeg"
 import { motion } from "motion/react"
 
@@ -57,7 +57,7 @@ const About = () => {
                 >
                     <p className='mb-10 max-w-2xl'>
                         I am an experienced Front End Developer with over 3 years of professional training in my field.
-                        I am focused on user-centered development, and i've had the privilege to collaborate with multiple organisations,
+                        I am focused on user-centered development, and Ive had the privilege to collaborate with multiple organisations,
                         contributing to their sucess and growth.
                     </p>
 

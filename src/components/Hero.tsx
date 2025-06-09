@@ -24,7 +24,7 @@ const Hero = () => {
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className='flex items-end gap-2 text-xl md:text-2xl mb-3'>Hey! I'm Moses Ajagbe
+                className='flex items-end gap-2 text-xl md:text-2xl mb-3'>Hey! Im Moses Ajagbe
                 <Image
                     src={Wave}
                     alt='wave'
@@ -40,7 +40,7 @@ const Hero = () => {
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className='max-w-2xl mx-auto px-4 md:px-0'>I'm a front end web developer with over 3 years of experience in creating responsive, UI centered designs.</motion.p>
+                className='max-w-2xl mx-auto px-4 md:px-0'>Im a front end web developer with over 3 years of experience in creating responsive, UI centered designs.</motion.p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <motion.a
                     initial={{ y: -30, opacity: 0 }}

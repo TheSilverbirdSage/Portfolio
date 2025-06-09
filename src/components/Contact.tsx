@@ -65,7 +65,7 @@ const Contact = () => {
             <h2 className='text-center text-5xl font-bold text-[var(--text-color)]'>Get In Touch</h2>
 
             <p className='text-center mx-auto mt-5 mb-12 max-w-2xl text-[var(--text-color)] opacity-80'>
-                I'd love to work with you. If you have any feedback, questions or inquiries, please use the form below.
+                Id love to work with you. If you have any feedback, questions or inquiries, please use the form below.
             </p>
 
             {/* The onSubmit handler is now on the form tag */}
