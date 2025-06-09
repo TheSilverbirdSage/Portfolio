@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='mt-20'>
+        <div>
             <div className='text-center text-4xl'>
                 <div className='flex items-center gap-2 w-max mx-auto text-sm'>
                     <Image

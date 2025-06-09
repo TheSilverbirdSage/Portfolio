@@ -2,6 +2,7 @@ import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
+import Link from 'next/link';
 
 const Work = () => {
     return (
@@ -35,27 +36,34 @@ const Work = () => {
                 className='grid md:grid-cols-4 grid-cols-[repeat(auto-fit,_minimax(200px,_1fr))] my-10 gap-5'
             >
                 {workData.map((project, index) => (
-                    <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
-                        key={index}
-                        style={{ backgroundImage: `url(${project.bgImage})` }}
-                        className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
+                    <Link
+                        key={index} // Always use a unique key when mapping over lists
+                        href={project.link} // Use the link property from your workData
+                        target={project.link.startsWith('http') ? '_blank' : '_self'}
+                        rel={project.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                     >
-                        <div className='flex items-center justify-between bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 duration-500 group-hover:bottom-7 '>
-                            <div>
-                                <h2 className='font-semibold text-black'>{project.title}</h2>
-                                <p className='text-sm text-gray-700'>{project.description}</p>
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ duration: 0.3 }}
+                            key={index}
+                            style={{ backgroundImage: `url(${project.bgImage})` }}
+                            className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
+                        >
+                            <div className='flex items-center justify-between bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 duration-500 group-hover:bottom-7 '>
+                                <div>
+                                    <h2 className='font-semibold text-black'>{project.title}</h2>
+                                    <p className='text-sm text-gray-700'>{project.description}</p>
+                                </div>
+                                <div className='flex items-center justify-center broder border-black rounded-full w-9 aspect-square shadow-2xl group-hover:bg-lime-300 transition'>
+                                    <Image
+                                        src={assets.send_icon}
+                                        alt='send'
+                                        className='w-5'
+                                    />
+                                </div>
                             </div>
-                            <div className='flex items-center justify-center broder border-black rounded-full w-9 aspect-square shadow-2xl group-hover:bg-lime-300 transition'>
-                                <Image
-                                    src={assets.send_icon}
-                                    alt='send'
-                                    className='w-5'
-                                />
-                            </div>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    </Link>
                 ))}
             </motion.div>
             <motion.a

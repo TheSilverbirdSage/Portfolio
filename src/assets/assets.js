@@ -74,24 +74,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'CoastNg',
+        description: 'Web Development',
         bgImage: '/work-1.png',
+        link: 'https://www.coast.ng/'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Haulway',
+        description: 'Web Development',
         bgImage: '/work-2.png',
+        link: 'https://haulway.co/'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Admin Dashboard',
+        description: 'Web Development',
         bgImage: '/work-3.png',
+        link: 'https://admin-heulw7619.coast.ng/login'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Admin Dashboard',
+        description: 'Web Development',
         bgImage: '/work-4.png',
+        link: 'https://crednow-admin-dashboard.netlify.app'
     },
 ]
 
