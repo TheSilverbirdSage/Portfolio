@@ -35,19 +35,19 @@ const Hero = () => {
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className='text-3xl sm:text-6xl lg:text-[66px] px-4 md:px-0'>Front End Web Developer Based In Nigeria.</motion.h1>
+                className='text-3xl sm:text-6xl lg:text-[66px] px-6 md:px-0'>Front End Web Developer Based In Nigeria.</motion.h1>
             <motion.p
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className='max-w-2xl mx-auto px-4 md:px-0'>Im a front end web developer with over 3 years of experience in creating responsive, UI centered designs.</motion.p>
+                className='max-w-2xl mx-auto px-6 md:px-0'>Im a front end web developer with over 3 years of experience in creating responsive, UI centered designs.</motion.p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <motion.a
                     initial={{ y: -30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 1 }}
                     href="#contact"
-                    className='flex items-center gap-2 px-10 py-3 border rounded-full border-white bg-black text-white'
+                    className='flex items-center gap-2 px-10 py-3 border rounded-full border-gray-500 bg-black text-white h-15'
                 >
                     contact me
                     <Image
@@ -62,8 +62,8 @@ const Hero = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 1.2 }}
                     href="/OluwanifemiMosesAjagbe.pdf"
-                    download
-                    className='flex items-center gap-2 px-10 py-3 border rounded-full border-gray-500'>
+                    download="OluwanifemiMosesAjagbe_CV.pdf"
+                    className='flex items-center gap-2 px-10 py-3 border rounded-full border-gray-500 h-15 w-40'>
                     my CV
                     <Image
                         src={Download}

@@ -29,7 +29,7 @@ const Footer = () => {
                     <li>
                         <a
                             target='_blank'
-                            href="https://www.linkedin.com/in/oluwanifemi-ajagbe-881859318">
+                            href="https://www.linkedin.com/in/oluwanifemi-moses-ajagbe-183080370">
                             LinkedIn 
                         </a>
                     </li>

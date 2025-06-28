@@ -71,7 +71,9 @@ const Work = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 1.1, duration: 0.5 }}
                 href="https://github.com/TheSilverbirdSage"
-                className='flex items-center justify-center gap-2 w-max border-[0.5px] border-gray-700 rounded-full y-3 px-10 mx-auto my-20 hover:shadow-2xl'
+                target="_blank"
+                rel="noopener noreferrer"
+                className='flex items-center justify-center gap-2 w-max border border-gray-700 rounded-full y-3 px-10 mx-auto my-20 hover:shadow-2xl'
             >
                 Show More
                 <Image
