@@ -17,7 +17,7 @@ const Hero = () => {
                 <Image
                     src={Profile}
                     alt='ProfileImage'
-                    className='rounded-full w-32'
+                    className='rounded-full w-32 hidden md:block lg:block'
                 />
             </motion.div>
             <motion.h3
