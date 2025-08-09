@@ -8,6 +8,9 @@ import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
+import flutter from './flutter.png'
+import supabase from './supabase.png'
+import wordpress from './wordpress.jpg'
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
@@ -44,6 +47,9 @@ export const assets = {
     vscode,
     firebase,
     figma,
+    flutter,
+    supabase,
+    wordpress,
     git,
     mongodb,
     right_arrow_white,
@@ -100,18 +106,18 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web development', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app dvelopment', description: 'Mobile app development involves creating software for mobile devices...',soon: 'Coming soon !!', link: '' },
+    { icon: assets.web_icon, title: 'Web development', description: 'I provide premium Frontend web based development services.', link: '' },
+    { icon: assets.mobile_icon, title: 'Mobile app dvelopment', description: 'I am also involved in the creation of mobile apps using flutter and dart.',soon: 'Coming soon !!', link: '' },
     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, TailwindCss, CSS, JavaScript, TypeScript, React Js, Next Js' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, TailwindCss, CSS, JavaScript, TypeScript, React Js, Next Js, Vue Js, Dart, Material Ui, Shadcn' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Sc in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 10 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.flutter, assets.wordpress, assets.supabase, assets.firebase, assets.git
 ];

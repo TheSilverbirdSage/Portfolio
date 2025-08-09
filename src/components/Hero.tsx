@@ -63,7 +63,7 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.2 }}
                     href="/OluwanifemiMosesAjagbe.pdf"
                     download="OluwanifemiMosesAjagbe_CV.pdf"
-                    className='flex items-center gap-2 px-10 py-3 border rounded-full border-gray-500 h-15 w-40'>
+                    className='flex items-center gap-2 px-10 py-3 border rounded-full border-gray-500 h-15 w-40 lg:hidden'>
                     my CV
                     <Image
                         src={Download}

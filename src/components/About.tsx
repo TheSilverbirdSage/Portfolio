@@ -71,7 +71,7 @@ const About = () => {
                             <motion.li
                                 whileInView={{ scale: 1.05 }}
                                 key={index}
-                                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[#000] hover:shadow-2xl"
+                                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:text-gray-700 hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[#000] hover:shadow-sm"
                             >
                                 {/* Display the icon */}
                                 {service.icon && (
