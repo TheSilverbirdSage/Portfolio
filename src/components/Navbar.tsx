@@ -8,7 +8,7 @@ import Close from "@/assets/close-black.png"
 const Navbar = () => {
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-     // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [isMobile, setIsMobile] = useState(false);
 
     // Effect to handle window resize for responsiveness
@@ -124,9 +124,11 @@ const Navbar = () => {
                         )}
                     </button>
                     <a
-                        href="#contact"
+                        href="/OluwanifemiMosesAjagbe.pdf"
+                        download="OluwanifemiMosesAjagbe_CV.pdf"
                         className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4'
-                    >Contact
+                    >
+                        My CV
                         <Image
                             src={ArrowDown}
                             alt='Arrow'
