@@ -39,7 +39,7 @@ const Services = () => {
                     <motion.div
                     whileHover={{ scale: 1.05 }}
                         key={index}
-                        className='border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:shadow-[#000] hover:shadow-2xl hover:-translate-y-1 duration-500'
+                        className='border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:shadow-[#000] hover:shadow-sm hover:-translate-y-1 duration-500'
                     >
                         <Image
                             src={icon}
