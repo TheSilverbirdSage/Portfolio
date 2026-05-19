@@ -81,16 +81,16 @@ const Contact = () => {
                         name="user_name"
                         required
                         // Fixed typo: border-gray-400 rounded-md
-                        className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md
-                                   bg-[var(--card-background)] text-[var(--text-color)] placeholder:text-[var(--text-color)] placeholder:opacity-60 focus:border-blue-500'
+                        className='flex-1 p-3 outline-none border-[0.5px] border-[var(--input-border)] rounded-md
+                                   bg-[var(--input-background)] text-[var(--input-text)] placeholder:text-[var(--input-placeholder)] focus:border-[var(--input-focus-border)]'
                     />
                     <input
                         type="email"
                         placeholder='Enter Your Email Address'
                         name="user_email"
                         required
-                        className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md
-                                   bg-[var(--card-background)] text-[var(--text-color)] placeholder:text-[var(--text-color)] placeholder:opacity-60 focus:border-blue-500'
+                        className='flex-1 p-3 outline-none border-[0.5px] border-[var(--input-border)] rounded-md
+                                   bg-[var(--input-background)] text-[var(--input-text)] placeholder:text-[var(--input-placeholder)] focus:border-[var(--input-focus-border)]'
                     />
                 </div>
                 <textarea
@@ -98,8 +98,8 @@ const Contact = () => {
                     placeholder='Enter Your Messsage 😉'
                     name="message" // Added name attribute for EmailJS
                     required
-                    className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md
-                               bg-[var(--card-background)] text-[var(--text-color)] placeholder:text-[var(--text-color)] placeholder:opacity-60 mb-6 focus:border-blue-500'
+                    className='w-full p-4 outline-none border-[0.5px] border-[var(--input-border)] rounded-md
+                               bg-[var(--input-background)] text-[var(--input-text)] placeholder:text-[var(--input-placeholder)] mb-6 focus:border-[var(--input-focus-border)]'
                 ></textarea> {/* Closing tag is correct */}
 
                 <button

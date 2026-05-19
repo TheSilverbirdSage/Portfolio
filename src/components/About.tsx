@@ -36,13 +36,13 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className='flex flex-col lg:flex-row items-center w-full gap-20 my-20'
+                className='flex flex-col lg:flex-row items-center lg:items-start w-full gap-20 my-20'
             >
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
-                    className='w-64 sm:w-80 rounded-3xl max-w-none'>
+                    className='w-64 sm:w-80 rounded-3xl max-w-none lg:mt-1'>
                     <Image
                         src={UserImage}
                         alt='user'
@@ -55,11 +55,24 @@ const About = () => {
                     transition={{ duration: 0.8, delay: 1 }}
                     className='flex-1'
                 >
-                    <p className='mb-10 max-w-2xl'>
-                        I am an experienced Front End Developer with over 3 years of professional training in my field.
-                        I am focused on user-centered development, and Ive had the privilege to collaborate with multiple organisations,
-                        contributing to their sucess and growth.
+                    <p className='mb-6 max-w-2xl'>
+                        I am a Senior Frontend Engineer with 5+ years of experience building production React and TypeScript applications for fintech, marketplace, and business-focused products. I care about creating interfaces that are clean for users, dependable for teams, and maintainable long after the first launch.
                     </p>
+                    <p className='mb-8 max-w-2xl'>
+                        My work goes beyond turning designs into screens. I look for issues early, suggest practical refactors, improve code quality, and collaborate closely with technical leads, backend engineers, and product stakeholders to ship software that holds up in real use. I am comfortable contributing under senior technical direction while still bringing ideas that raise the standard for the whole team.
+                    </p>
+
+                    <motion.ul
+                        initial={{ opacity: 0, y: 16 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className='mb-10 grid max-w-2xl grid-cols-1 gap-3 text-sm sm:grid-cols-2'
+                    >
+                        <li className='rounded-lg border border-gray-300 px-4 py-3'>Production React and TypeScript builds</li>
+                        <li className='rounded-lg border border-gray-300 px-4 py-3'>CI/CD awareness with GitHub Actions</li>
+                        <li className='rounded-lg border border-gray-300 px-4 py-3'>Code quality, refactoring, and maintainability</li>
+                        <li className='rounded-lg border border-gray-300 px-4 py-3'>Strong collaboration with backend and product teams</li>
+                    </motion.ul>
 
                     <motion.ul
                         initial={{ opacity: 0, scale: 0.9 }}

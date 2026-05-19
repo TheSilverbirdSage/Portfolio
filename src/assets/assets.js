@@ -106,10 +106,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web development', description: 'I provide premium Frontend web based development services.', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app dvelopment', description: 'I am also involved in the creation of mobile apps using flutter and dart.',soon: 'Coming soon !!', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web development', description: 'I provide premium Frontend web based development services.', link: '/services#web-development' },
+    { icon: assets.mobile_icon, title: 'Mobile app development', description: 'I am also involved in the creation of mobile apps using flutter and dart.',soon: 'Coming soon !!', link: '/services#mobile-app-development' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '/services#ui-ux-design' },
+    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '/services#graphics-design' },
 ]
 
 export const infoList = [

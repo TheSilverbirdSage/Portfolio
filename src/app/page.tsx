@@ -11,13 +11,27 @@ import Work from "@/components/Work";
 export default function Home() {
   return (
     <>
+      <div className="site-tech-backdrop" aria-hidden="true">
+        <img
+          src="/tech-silhouette.svg"
+          alt=""
+          className="site-tech-backdrop__top"
+        />
+        <img
+          src="/tech-silhouette.svg"
+          alt=""
+          className="site-tech-backdrop__bottom"
+        />
+      </div>
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Work />
-      <Contact />
-      <Footer />
+      <main className="relative z-10">
+        <Hero />
+        <About />
+        <Services />
+        <Work />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 }

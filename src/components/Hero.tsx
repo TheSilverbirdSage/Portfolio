@@ -40,7 +40,7 @@ const Hero = () => {
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className='max-w-2xl mx-auto px-6 md:px-0'>Im a front end web developer with over 3 years of experience in creating responsive, UI centered designs.</motion.p>
+                className='max-w-3xl mx-auto px-6 md:px-0 text-sm sm:text-base leading-7'>Senior Frontend Engineer with 5+ years building production React and TypeScript applications in fintech and marketplace environments. Known for proactive ownership, reducing technical debt, improving team standards, and collaborating closely with technical leads and backend engineers to ship robust, maintainable software.</motion.p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <motion.a
                     initial={{ y: -30, opacity: 0 }}
@@ -63,12 +63,12 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 1.2 }}
                     href="/OluwanifemiMosesAjagbe.pdf"
                     download="OluwanifemiMosesAjagbe_CV.pdf"
-                    className='flex items-center gap-2 px-10 py-3 border rounded-full border-gray-500 h-15 w-40 lg:hidden'>
+                    className='flex items-center gap-2 px-10 py-3 border rounded-full border-[var(--input-border)] text-[var(--text-color)] bg-[var(--background-color)] h-15 w-40 lg:hidden'>
                     my CV
                     <Image
                         src={Download}
                         alt='download'
-                        className='w-4'
+                        className='theme-icon w-4'
                     />
                 </motion.a>
             </div>

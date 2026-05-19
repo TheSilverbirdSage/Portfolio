@@ -101,7 +101,7 @@ const Navbar = () => {
                     <div></div>
                 )} */}
             </div>
-            <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between ${theme === 'light' ? 'bg-white' : 'bg-[var(--navbar-bg)]'} z-50`}>
+            <nav className={`site-navbar w-full px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between ${theme === 'light' ? 'bg-white' : 'bg-[var(--navbar-bg)]'}`}>
                 <a href="#top">
                     <h1 className='cursor-pointer mr-14'>Moses Ajagbe</h1>
                 </a>

@@ -3,25 +3,129 @@
 *{
   font-family: Outfit;
 }
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #111827;
+  --card-background: #ffffff;
+  --input-background: #ffffff;
+  --input-text: #111827;
+  --input-placeholder: #6b7280;
+  --input-border: #9ca3af;
+  --input-focus-border: #2563eb;
+  --navbar-bg: rgba(255, 255, 255, 0.9);
+  --navbar-text: #111827;
+  --ambient-silhouette-filter: none;
+  --ambient-silhouette-opacity: 0.12;
+}
+
 /* Define CSS Variables for Dark Mode */
 /* Dark Mode Variables (apply when html has 'dark-mode' class) */
 html.dark-mode {
   --background-color: #111827; /* Dark page background */
   --text-color: #f9fafb; /* Light text color */
+  --card-background: #111827;
+  --input-background: #f9fafb;
+  --input-text: #111827;
+  --input-placeholder: #4b5563;
+  --input-border: #6b7280;
+  --input-focus-border: #60a5fa;
   --navbar-bg: rgba(17, 24, 39, 0.7); /* Dark Navbar background with transparency */
   --navbar-text: #f9fafb; /* Dark Navbar link text */
   --navbar-link-hover-text: #60a5fa; /* Dark Navbar link hover color (e.g., blue-400) */
   --drawer-bg: #374151; /* Dark mobile drawer background (e.g., gray-700) */
   --drawer-text: #f9fafb; /* Dark mobile drawer text */
   --border-color: #9ca3af; /* Gray-400 for borders */
+  --ambient-silhouette-filter: invert(1);
+  --ambient-silhouette-opacity: 0.14;
 }
 
 /* Optional: Smooth transition for theme changes */
 body {
+  position: relative;
+  background-color: var(--background-color);
+  color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.site-tech-backdrop,
+.site-tech-backdrop__top,
+.site-tech-backdrop__bottom {
+  pointer-events: none;
+}
+
+.site-tech-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.site-tech-backdrop__top,
+.site-tech-backdrop__bottom {
+  position: fixed;
+  z-index: 0;
+  height: auto;
+  filter: var(--ambient-silhouette-filter);
+  opacity: var(--ambient-silhouette-opacity);
+  user-select: none;
+}
+
+.site-tech-backdrop__bottom {
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  width: 100%;
+}
+
+.site-tech-backdrop__top {
+  top: 88px;
+  right: -10vw;
+  width: min(880px, 92vw);
+  transform: scaleX(-1);
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.site-navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 /* Optional: Ensure text rendering is correct for dark mode on some systems */
 html.dark-mode {
   color-scheme: dark;
+}
+
+.footer-silhouette {
+  width: 100%;
+  height: clamp(120px, 18vw, 260px);
+  background-color: currentColor;
+  opacity: 0.95;
+  -webkit-mask-image: url("/tech-silhouette.svg");
+  mask-image: url("/tech-silhouette.svg");
+  -webkit-mask-position: center bottom;
+  mask-position: center bottom;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.footer-copy {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+html.dark-mode .footer-copy {
+  color: rgba(17, 24, 39, 0.74);
+}
+
+html.dark-mode .theme-icon {
+  filter: invert(1);
 }

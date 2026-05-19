@@ -1,0 +1,21 @@
+<svg width="1440" height="260" viewBox="0 0 1440 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tech silhouette</title>
+  <desc id="desc">A simple technology skyline silhouette with server racks, code panels, antennas, and circuit traces.</desc>
+  <path d="M0 230H1440V260H0V230Z" fill="#111827"/>
+  <path d="M0 218H42V178H70V136H116V218H151V104H213V218H249V158H300V218H338V82H412V218H455V132H503V218H546V164H610V218H651V118H710V218H749V94H815V218H852V148H905V218H946V112H1003V218H1042V162H1098V218H1137V76H1214V218H1250V140H1305V218H1342V170H1385V218H1440V230H0V218Z" fill="#111827"/>
+  <path d="M172 122H194V132H172V122ZM172 148H194V158H172V148ZM172 174H194V184H172V174ZM356 105H394V112H356V105ZM356 130H394V137H356V130ZM356 155H394V162H356V155ZM356 180H394V187H356V180ZM774 118H791V135H774V118ZM774 154H791V171H774V154ZM774 190H791V207H774V190ZM1161 101H1195V109H1161V101ZM1161 126H1195V134H1161V126ZM1161 151H1195V159H1161V151ZM1161 176H1195V184H1161V176Z" fill="white" fill-opacity="0.24"/>
+  <path d="M436 132V98H468V72H515V48H560M515 48V35M560 48V35M454 98H490M490 98V78H525" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M926 112V78H964V52H1016M1016 52V38M958 78V58H983M983 58V43" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="515" cy="35" r="9" fill="#111827"/>
+  <circle cx="560" cy="35" r="9" fill="#111827"/>
+  <circle cx="525" cy="78" r="8" fill="#111827"/>
+  <circle cx="1016" cy="38" r="9" fill="#111827"/>
+  <circle cx="983" cy="43" r="8" fill="#111827"/>
+  <path d="M642 118H719V68H642V118Z" fill="#111827"/>
+  <path d="M658 83H702M658 101H688" stroke="white" stroke-opacity="0.28" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1066 162H1128V116H1066V162Z" fill="#111827"/>
+  <path d="M1081 132H1112M1081 149H1103" stroke="white" stroke-opacity="0.28" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1214 76L1251 35L1288 76H1214Z" fill="#111827"/>
+  <path d="M1251 35V10" stroke="#111827" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1251" cy="10" r="7" fill="#111827"/>
+</svg>
